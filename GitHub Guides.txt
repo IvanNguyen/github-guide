@@ -1,0 +1,41 @@
+# Thiet lap thong tin nguoi dung
+git config --global user.name "Ten cua ban"
+git config --global user.email "Dia chi email cua ban"
+# Thay doi origin url
+git remote set-url origin https://github.com/repo.git
+# Lay project tu Remote Repository
+git clone <link>
+git status
+git add <file-name> // git add . // git
+git commit -m "Message"
+git push
+git log
+# Tao project Local roi up len Remote Repository
+echo "# Demo6" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/Gon95/Demo6.git
+git push -u origin master
+# Lay file moi nhat ve may
+git pull <name> <branch> // xem lai ??????? // git pull <ten branch>
+# Tao branch moi 
+git branch <ten>
+git checkout -b <ten>
+# Kiem tra dang o branch nao ?
+git branch
+# Xoa branch
+git branch -D <ten branch>
+# Push your branch to the remote repository
+git push -u origin feature_branch_name
+# Merge code tu branch vao trong master - sau do upate len remote responsitory !
+git checkout master
+git merge <branch-name>
+git push
+# Reset commit
+git reset --soft HEAD^
+git reset --hard HEAD^
+# Xem cai commit thay doi
+git diff --help
+########################### Expand ###############
+git commit --amend -m "New commit mesage" 
